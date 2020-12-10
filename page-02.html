@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Unoeste" />
+    <meta name="generator" content="Unoeste" />
+    <meta name="keywords" content="Unoeste | Educação à distância." />
+
+    <!-- Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Unoeste" />
+    <meta property="og:site_name" content="Unoeste" />
+    <meta property="og:url" content="http://unoeste.br/" />
+    <meta property="og:image" content="assets\media\others\share.jpg" />
+    <meta property="og:description" content="Unoeste" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="450" />
+
+    <!-- Favicon -->
+    <link href="assets/media/icons/unoeste/512x512.png" rel="shortcut icon" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/media/icons/unoeste/192x192.png" type="image/png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luxonauta/luxa@1.0/dist/compressed/luxa.css">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="assets/stylesheets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aqazix/printElements@latest/dist/printElements.min.css" media="print">
+
+    <!-- Latest version of HandTalk -->
+    <script id="scriptHT" type="text/javascript" src="https://plugin.handtalk.me/web/latest/handtalk.min.js" crossorigin="anonymous" async></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120454823-1" crossorigin="anonymous"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "UA-120454823-1");
+    </script>
+
+    <title>Unoeste - Engenharia de Software</title>
+</head>
+
+<body>
+    <!-- Logo opening animation -->
+    <div class="opening-animation is-active">
+        <div class="content-opening lx-container-85">
+            <img class="logo-home" src="assets/media/logos/logo-white.svg" alt="Unoeste">
+            <div class="progress-bar">
+                <div id="op-status" class="bar-status"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="lx-container-80 navbar-container">
+                    <div class="navbar-buttons">
+                        <div class="navbar-item">
+                            <a class="btn-accessibility">
+                                <div class="icon-settings"></div>
+                            </a>
+                        </div>
+                        <div class="navbar-item">
+                            <a class="btn-menu">
+                                <div class="icon-menu"></div>
+                            </a>
+                        </div>
+                        <div class="navbar-item">
+                            <div class="top-action">
+                                <a class="btn-problem" id="btn-problem" title="Relate um problema" data-option="content-problem">
+                                    <div class="icon-problem">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" width="24" height="24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                            <circle class="st0" cx="12" cy="12" r="10"/>
+                                            <line class="st0" x1="12" y1="8" x2="12" y2="12"/>
+                                            <line class="st0" x1="12" y1="16" x2="12" y2="16"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="navbar-item">
+                            <div class="bottom-action">
+                                <a class="btn-top">
+                                    <div class="icon-arrow"></div> 
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="navbar-content">
+                        <div class="navbar-brand">
+                            <div class="brand">
+                                <img src="assets/media/logos/logo-green.svg" alt="Unoeste">
+                            </div>
+                        </div>
+                        <div class="navbar-menu">
+                            <div class="navbar-items">
+                                <ul>
+                                    <li class="navbar-item has-dropdown"><a class="navbar-link" href="index.html">Início</a></li>
+                                    <li class="navbar-item has-dropdown">
+                                        <a class="navbar-link" href="index.html#anchor-01">Conceituando</a>
+                                        <ul class="navbar-dropdown">
+                                            <li class="navbar-item"><a href="index.html#anchor-02">Qualidade</a></li>
+                                            <li class="navbar-item"><a href="index.html#anchor-03">Qualidade de Software</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="navbar-item has-dropdown">
+                                        <a class="navbar-link" data-target="anchor-beginning">Atividades da Garantia da Qualidade</a>
+                                        <ul class="navbar-dropdown">
+                                            <li class="navbar-item" data-target="anchor-04"><a>Verificação, Validação e Teste</a></li>
+                                            <li class="navbar-item" data-target="anchor-05"><a>Técnicas de Revisões Formais</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="navbar-item has-dropdown">
+                                        <a class="navbar-link">Finalização</a>
+                                        <ul class="navbar-dropdown">
+                                            <li class="navbar-item" data-target="anchor-activities"><a>Atividades</a>
+                                            </li>
+                                            <li class="navbar-item" data-target="anchor-conclusion"><a>Conclusão</a>
+                                            </li>
+                                            <li class="navbar-item" data-target="anchor-references"><a>Referências</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="navbar-accessibility">
+                        <div class="navbar-brand">
+                            <div class="brand">
+                                <img src="assets/media/logos/logo-green.svg" alt="Unoeste">
+                            </div>
+                        </div>
+                        <div class="accessibility">
+                            <p class="title">Acessibilidade</p>
+                            <a id="handtalk-btn" class="toggle-btn has-margin">
+                                <div class="icon">
+                                    <img src="assets/media/icons/handtalk.svg" alt="HandTalk">
+                                </div>
+                                <p>Hand Talk</p>
+                            </a>
+                            <a id="contrast-btn" class="toggle-btn has-margin">
+                                <div class="icon">
+                                    <img src="assets/media/icons/contrast.svg" alt="Contrast">
+                                </div>
+                                <p>Contraste</p>
+                            </a>
+                            <p class="title">Tamanho da Fonte</p>
+                            <div class="btn-wrapper">
+                                <a id="decrease-btn" class="toggle-btn">
+                                    <div class="icon only">
+                                        <img src="assets/media/icons/decrease-letter.svg" alt="Decrease">
+                                    </div>
+                                </a>
+                                <a id="increase-btn" class="toggle-btn">
+                                    <div class="icon only">
+                                        <img src="assets/media/icons/increase-letter.svg" alt="Increase">
+                                    </div>
+                                </a>
+                            </div>
+                            <hr>
+                            <p class="title">Download do PDF</p>
+                            <a id="download-btn" class="toggle-btn">
+                                <p class="only">Download</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-problem" id="problem">
+                        <div class="problem-background">
+                            <div class="navbar-brand">
+                                <div class="brand">
+                                    <a href="http://www.unoeste.br/ava" target="_blank" rel="noreferrer noopener"><img src="assets/media/logos/logo-green.svg" alt="Unoeste"></a>
+                                </div>
+                            </div>
+                            <div class="problem">
+                                <div class="modal-header">
+                                    <a class="btn-close"><img src="assets/media/icons/x-icon.svg" alt=""></a>
+                                </div>
+                                <div class="modal-problem">
+                                    <div class="content" data-content="content-problem">
+                                        <div id="successMessage">
+                                            <p>Mensagem enviada com sucesso.</p>
+                                        </div>
+                                        <div id="errorMessage">
+                                            <p>Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente mais tarde.</p>
+                                        </div>
+                                        <div class="lx-text choose">
+                                            <h2>
+                                                Relate um Problema
+                                            </h2>
+
+                                            <p>
+                                                A sua contribuição é muito importante para nós. Se você deseja relatar um problema ou sugerir alguma correção, selecione uma das opções a seguir. Lembre-se de que quanto mais informações conseguir indicar, mais rápido poderemos resolver. Obrigado pela participação!
+                                            </p>
+                                            <button class="contentProblem">Dúvida com o Conteúdo</button>
+                                            <button class="layoutProblem">Problema Técnico</button>
+                                            <div class="suportProblem"><a href="https://api.whatsapp.com/send?phone=+5518991057389&text=Oi,%20estou%20com%20problemas!" target="_blank">Fale com o Suporte</a></div>
+                                        </div>
+                                        <div id="contentProblem">
+                                            <h2>Dúvida com o Conteúdo</h2>
+                                            <form>
+                                                <div class="control">
+                                                    <label for="name-content">Nome</label>
+                                                    <input type="text" name="name" id="name-content" placeholder="Insira o seu nome." class="name">
+                                                </div>
+                                                <div class="control">
+                                                    <label for="email-content">E-mail</label>
+                                                    <input type="email" name="email" id="email-content" placeholder="Insira o seu e-mail." class="email">
+                                                </div>
+                                                <div class="control">
+                                                    <label for="message-content">Dúvida</label>
+                                                    <textarea name="message" id="message-content" cols="30" rows="3" maxlength="500" placeholder="Descreva sua dúvida." class="message"></textarea>
+                                                </div>
+                                                <div class="control">
+                                                    <button type="button" class="btnSubmit">Enviar</button>
+                                                </div>
+                                                <input type="hidden" name="honeypot" class="honeypot">
+                                                <input type="hidden" name="subject" class="subject" value="GC933D9A1 - Dúvida com o Conteúdo">
+                                            </form>
+                                        </div>
+                                        <div id="layoutProblem">
+                                            <h2>Problema Técnico</h2>
+                                            <form>
+                                                <div class="control">
+                                                    <label for="name-layout">Nome</label>
+                                                    <input type="text" name="name" id="name-layout" placeholder="Insira o seu nome" class="name">
+                                                </div>
+                                                <div class="control">
+                                                    <label for="email-layout">E-mail</label>
+                                                    <input type="email" name="email" id="email-layout" placeholder="Insira o seu e-mail" class="email">
+                                                </div>
+                                                <div class="control">
+                                                    <label for="message-layout">Problema</label>
+                                                    <textarea class="message" name="message" id="message-layout" cols="30" rows="3" placeholder="Descreva o seu problema" maxlength="500"></textarea>
+                                                </div>
+                                                <div class="control">
+                                                    <button type="button" class="btnSubmit">Enviar</button>
+                                                </div>
+                                                <input class="honeypot" type="hidden" name="honeypot">
+                                                <input type="hidden" name="subject" class="subject" value="GC933D9A1 - Problema Técnico" class="subject">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <svg class="modal-svg-problem" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                                    preserveAspectRatio="none">
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" rx="3" ry="3"></rect>
+                                </svg>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="anchor-beginning">
+        <section class="sec-13">
+            <div class="lx-container-70">
+                <div class="lx-row is-end">
+                    <div class="lx-column is-5">
+                        <h1 class="is-title">
+                            Atividades da Garantia da Qualidade
+                        </h1>
+
+                        <p>
+                            Uma das formas de melhorar a qualidade do processo e do produto no final é investir nas <b>atividades da garantia da qualidade de software</b>. São elas:
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lx-row top-01">
+                    <img src="assets/media/details/section-13-1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-14 anchor-04" id="anchor-04">
+            <div class="banner">
+                <div class="lx-container-70">
+                    <div class="lx-row">
+                        <div class="lx-column is-8 is-text-centered">
+                            <h1 class="is-title">
+                                Validação, Verificação e Teste de Software (V,V&T)
+                            </h1>
+
+                            <p>
+                                As atividades de validação, verificação e teste de software são realizadas desde o início do processo de software durante a coleta de requisitos. Afinal, problemas detectados logo no começo geram menor retrabalho no final e menos desperdício de recursos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-15">
+            <div class="lx-container-70">
+                <div class="lx-row align-stretch">
+                    <div class="lx-column is-3">
+                        <div class="box">
+                            <img src="assets/media/details/section-15-1.png" alt="">
+
+                            <p>
+                                A <b class="color-7">Validação</b> consiste em garantir que foi compreendido corretamente as necessidades do cliente para construir o produto que ele necessita. Neste caso estamos trabalhando com <b class="color-7">“o que”</b>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="lx-column is-3">
+                        <div class="box">
+                            <img src="assets/media/details/section-15-1.png" alt="">
+
+                            <p>
+                                Podemos validar os requisitos com o cliente fazendo por exemplo um desenho da interface do sistema (protótipo) para que ele valide. Validar o produto ou parte pronta com o cliente e internamente por testes de software. Entre outras formas que veremos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="lx-column is-3">
+                        <div class="box">
+                            <img src="assets/media/details/section-15-1.png" alt="">
+
+                            <p>
+                                Enquanto a validação trabalha com “o que”, a <b class="color-7">Verificação</b> deve garantir o <b class="color-7">“como”</b>. Isto que dizer que durante a verificação estamos preocupados em averiguar se as soluções tecnológicas adotadas para solucionar o problema são as melhores considerando o custo e benefício para o projeto.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-16">
+            <div class="lx-container-70">
+                <div class="lx-row">
+                    <div class="lx-column is-9">
+                        <div class="box">
+                            <p>
+                                Já os <b class="color-7">Testes de Software</b> consistem em <b class="color-7">validar</b> se o comportamento realizado pelo sistema, ou parte dele (código-fonte), é o esperado perante as especificações dos requisitos. Neste caso examinamos o comportamento durante sua execução em relação as definições dos requisitos.
+                            </p>
+                            
+                            <p>
+                                Mas como realizar essas atividades? Utilizamos o que chamamos de <b>técnicas de revisão</b> para realizar essas atividades.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lx-row top-01">
+                    <img src="assets/media/details/section-16-1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-17">
+            <div class="lx-container-70">
+                <div class="lx-row is-end">
+                    <div class="lx-column is-5">
+                        <h3 class="is-play is-not-bold">
+                            As revisões de software são como um filtro para a gestão da qualidade, sendo aplicadas em várias etapas durante o processo de software, para eliminar os defeitos. Afinal, os defeitos impactam diretamente nos custos de um projeto.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner">
+                <div class="lx-container-70">
+                    <div class="lx-row">
+                        <div class="lx-column is-8 is-text-centered">
+                            <img src="assets/media/details/section-stop.png" alt="">
+
+                            <h1 class="is-title is-color-5">
+                                Parada obrigatória
+                            </h1>
+
+                            <p>
+                                Para entender mais, leia a seção <a href="https://integrada.minhabiblioteca.com.br/#/books/9788580555349/cfi/0!/4/2@100:0.00" target="_blank" rel="noopener noreferrer"><b><u>20.1 Impacto de defeitos de software nos custos</u></b></a>, do cap. 20 - Técnicas de revisão, do livro Engenharia de software: uma abordagem profissional, de Roger S. Pressman e Bruce R. Maxim. Bom estudo!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-18">
+            <div class="lx-container-70">
+                <div class="lx-row is-end">
+                    <div class="lx-column is-5">
+                        <h3 class="is-play">
+                            Você percebeu como são importantes as atividades que averiguam a qualidade durante todo o processo de desenvolvimento e como elas contribuem para a redução de consumo de recursos em um projeto de software?
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="lx-row top-01">
+                    <img src="assets/media/details/section-18-1.png" alt="">
+                </div>
+
+                <div class="lx-row is-around is-vend">
+                    <div class="lx-column is-3 is-text-centered">
+                        <img src="assets/media/details/section-18-3.png" alt="">
+                    </div>
+
+                    <div class="lx-column is-3 is-text-centered">
+                        <div class="box">
+                            <p>
+                                Uma das ferramentas utilizadas para fazer a revisão formal de software é a inspeção por intermédio de <b>checklist de software</b>. O checklist é um conjunto de questionamentos para um determinado artefato de software e suas características que deve ser utilizado para guiar uma revisão formal. O resultado da revisão formal é um <b>relatório</b> que aponta os problemas encontrados no artefato e dúvidas que devem ser sanadas.
+                            </p>
+                        </div>
+
+                        <img src="assets/media/details/section-18-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-19 anchor-05" id="anchor-05">
+            <div class="banner">
+                <div class="lx-container-70">
+                    <div class="lx-row">
+                        <div class="lx-column is-8 is-text-centered">
+                            <img src="assets/media/details/section-stop.png" alt="">
+
+                            <h1 class="is-title color-5">
+                                Parada obrigatória
+                            </h1>
+
+                            <p>
+                                Vamos entender melhor o que são técnicas de revisões formais e outras formas de realizar além do checklist. Para isso, leia a seção <a href="https://integrada.minhabiblioteca.com.br/#/books/9788580555349/cfi/0!/4/2@100:0.00" target="_blank" rel="noopener noreferrer"><b><u>20.6 Revisões técnicas formais</u></b></a>, do cap. 20 - Técnicas de revisão, do livro Engenharia de software: uma abordagem profissional, de Roger S. Pressman e Bruce R. Maxim. Bom estudo!
+                            </p>
+
+                            <p>
+                                Percebeu como os passos são bem definidos e devem ser seguidos à risca para um bom resultado? Não se esqueça de que os processos da qualidade, por mais complexos que sejam, não devem ser negligenciados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-activities anchor-activities" id="anchor-activities">
+            <div class="lx-container-70">
+                <div class="lx-row">
+                    <img src="assets/media/details/section-activities-1.png" alt="">
+
+                    <div class="lx-column is-text-centered">
+                        <h1>
+                            Atividade de
+                        </h1>
+
+                        <h2>
+                            Autoestudo
+                        </h2>
+                    </div>
+
+                    <div class="lx-column">
+                        <p>
+                            Vamos testar os conhecimentos! Para isso, realize a atividade de autoestudo disponível no Aprender Unoeste. É o momento de identificar o quanto você conseguiu compreender os assuntos que vimos nesta aula. Participe!
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="lx-row">
+                    <img src="assets/media/details/section-activities-2.png" alt="">
+                    
+                    <div class="lx-column is-text-centered">
+                        <h1>
+                            Atividade
+                        </h1>
+                        
+                        <h2>
+                            Avaliativa
+                        </h2>
+                    </div>
+                    
+                    <div class="lx-column">
+                        <p>
+                            Agora vale nota!
+                        </p>
+
+                        <p>
+                            Para saber como você deve participar, acesse a atividade no seu ambiente virtual de aprendizagem Aprender Unoeste e siga as instruções que estão disponibilizadas. Bom trabalho!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-conclusion anchor-conclusion" id="anchor-conclusion">
+            <div class="lx-container-70">
+                <div class="lx-row">
+                    <div class="lx-column is-8 is-text-centered">
+                        <h1 class="is-title color-5">
+                            Chegamos ao final da nossa aula!
+                        </h1>
+
+                        <p>
+                            Nela você entendeu até o momento o que é a área da qualidade de software dentro da engenharia de software e quais são as suas atividades. Compreendeu ainda a importância que essas atividades possuem perante a utilização de recursos envolvidos no desenvolvimento de software.
+                        </p>
+
+                        <p>
+                            Continue focado nos estudos e até a próxima!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-references anchor-references" id="anchor-references">
+            <div class="lx-container-70">
+                <div class="lx-row">
+                    <h1 class="is-title is-text-centered">
+                        Referências
+                    </h1>
+                </div>
+
+                <div class="lx-row">
+                    <div class="lx-column is-8">
+                        <p>
+                            ISO/IEC 9126-1. <b>Software engineering</b>: product quality. [S.l.], 2001.
+                        </p>
+
+                        <p>
+                            PFLEEGER, S. L. <b>Engenharia de software</b>: teoria e prática. São Paulo: Pearson, 2007.
+                        </p>
+
+                        <p>
+                            PRESSMAN, R. S.; MAXIM, B. R. <b>Engenharia de software</b>: uma abordagem profissional. Porto Alegre: AMGH, 2016.
+                        </p>
+
+                        <p>
+                            SOMMERVILLE, I. <b>Engenharia de software</b>. São Paulo: Pearson, 2009.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal-container">
+        <div class="modal-background">
+            <div class="modal">
+                <div class="modal-header">
+                    <a class="btn-close-modal"><img src="assets/media/icons/x-icon.svg" alt=""></a>
+                </div>
+
+                <div class="modal-content">
+                    <div class="content content-1" data-content="content-1"></div>
+                </div>
+
+                <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                    preserveAspectRatio="none">
+                    <rect x="0" y="0" fill="none" width="100%" height="100%" rx="3" ry="3"></rect>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Credits -->
+    <footer>
+        <div class="lx-container-80 is-flex container-footer">
+            <div class="lx-row logo-footer">
+                <img src="assets/media/logos/logo-footer.png" alt="Unoeste | Educação à distância.">
+            </div>
+            <div class="lx-row">
+                <div class="lx-column">
+                    <div class="lx-column is-12">
+                        <div class="lx-row elaboracao">
+                            <h1 class="lx-title">Elaboração</h1>
+                            <a class="lx-subtitle author" href="http://lattes.cnpq.br/2325416771118545" target="_blank" rel="noopener noreferrer">Francisco Virginio Maracci</a>
+                        </div>
+                    </div>
+                    <div class="lx-column is-12">
+                        <a class="accordion">Coordenação</a>
+                        <div class="panel">
+                            <div class="lx-row">
+                                <h1 class="lx-title">Coordenadora Geral</h1>
+                                <h2 class="lx-subtitle">Sonia Sanae Sato</h2>
+                            </div>
+                            <div class="lx-row">
+                                <h1 class="lx-title">Coordenadora Acadêmica</h1>
+                                <h2 class="lx-subtitle">Dayene M. de Carvalho Sano</h2>
+                            </div>
+                            <div class="lx-row">
+                                <h1 class="lx-title">Coordenador de Tecnologia e Produção de
+                                    Materiais</h1>
+                                <h2 class="lx-subtitle">Mário Augusto Pazoti</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lx-column is-6">
+                    <a class="accordion">Produção</a>
+                    <div class="panel">
+                        <div class="lx-column is-6">
+                            <div class="lx-row">
+                                <h1 class="lx-title">Design Educacional</h1>
+                                <h2 class="lx-subtitle">Janiele de Souza Santos</h2>
+                                <h2 class="lx-subtitle">Márcia Debieux</h2>
+                            </div>
+                            <div class="lx-row">
+                                <h1 class="lx-title">Design Gráfico</h1>
+                                <h2 class="lx-subtitle">Ana Donaton</h2>
+                                <h2 class="lx-subtitle">Kevin Silva</h2>
+                            </div>
+                            <div class="lx-row">
+                                <h1 class="lx-title">Web Design</h1>
+                                <h2 class="lx-subtitle">Aline Takehana</h2>
+                                <h2 class="lx-subtitle">Lucas de França</h2>
+                                <h2 class="lx-subtitle">Pedro Renato Rodrigues de Sousa</h2>
+                                <h2 class="lx-subtitle">Priscyla Yumiko Tanoue Tarumoto</h2>
+                            </div>
+                        </div>
+                        <div class="lx-column is-6">
+                            <div class="lx-row">
+                                <h1 class="lx-title">Produção de Vídeo</h1>
+                                <h2 class="lx-subtitle">Caroline Souza Lima</h2>
+                                <h2 class="lx-subtitle">Rita Miranda da Costa</h2>
+                                <h2 class="lx-subtitle">Wellington Erran Motta</h2>
+                            </div>
+                            <div class="lx-row">
+                                <h1 class="lx-title">Revisão Geral</h1>
+                                <h2 class="lx-subtitle">Edwiges Inácia de Lima</h2>
+                                <h2 class="lx-subtitle">Renata Rodrigues</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lx-column">
+                    <a class="accordion">Suporte</a>
+                    <div class="panel">
+                        <div class="lx-row">
+                            <h1 class="lx-title">Suporte Tecnológico</h1>
+                            <h2 class="lx-subtitle">Heitor Zangirolami Soares</h2>
+                            <h2 class="lx-subtitle">Hugo Gonçalves Nihy</h2>
+                            <h2 class="lx-subtitle">Luciana da Mata Crema</h2>
+                            <h2 class="lx-subtitle">Maycon Douglas Cezari Vergilio</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fonts -->
+    <!-- Scripts -->
+    <script id="scriptHTUnoeste" data-autoshow="false" data-maxtextsize="8000" src="assets/libs/handtalk/handtalk.js" crossorigin="anonymous" async></script>
+    <script src="https://cdn.jsdelivr.net/gh/aqazix/printElements@latest/printElements.min.js" crossorigin="anonymous"></script>
+    <script src="assets/libs/lottie/lottie.min.js" crossorigin="anonymous"></script>
+    <!-- Custom script -->
+    <script src="assets/scripts/scripts.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
